@@ -5,13 +5,37 @@ functions:
           method: post
           path: notes
     handler: handler.createNotes
+  createNotes1:
+    events:
+      - http:
+          method: post
+          path: notes1
+    handler: handler.createNotes
+  createNotes2:
+    events:
+      - http:
+          method: post
+          path: notes2
+    handler: handler.createNotes
+  createNotes3:
+    events:
+      - http:
+          method: post
+          path: notes3
+    handler: handler.createNotes
+  createNotes4:
+    events:
+      - http:
+          method: post
+          path: notes4
+    handler: handler.createNotes
 #    role: LambdaAccessRole
   exportsLogs:
     events:
       - http:
           method: get
           path: exportsLogs
-    handler: handler.exportLogs
+    handler: handler2.exportLogs
 #    role: LambdaAccessRole
   getNoteById:
     events:
